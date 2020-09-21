@@ -40,7 +40,7 @@ class TicTacToe
     if @board[input_to_index] == 'X' || @board[input_to_index] == 'O'
     #   true
     # else false
-    # end
+     end
   end
   
   def valid_move?(input_to_index)               #remember ! returns booleans

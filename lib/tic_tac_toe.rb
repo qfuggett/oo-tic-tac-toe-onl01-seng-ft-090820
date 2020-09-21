@@ -38,9 +38,9 @@ class TicTacToe
   
   def position_taken?(input_to_index)
     if @board[input_to_index] == 'X' || @board[input_to_index] == 'O'
-      true
-    else false
-    end
+    #   true
+    # else false
+    # end
   end
   
   def valid_move?(input_to_index)               #remember ! returns booleans

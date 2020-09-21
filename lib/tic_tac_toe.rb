@@ -1,3 +1,5 @@
+require 'pry'
+
 class TicTacToe
   attr_accessor :board, :input
   
@@ -71,13 +73,14 @@ class TicTacToe
   
   def turn
     user_input = gets.chomp
-    binding.pry
+    
     position = input_to_index(user_input)
     if valid_move?(position)
       move(position, current_player)
       display_board
     else turn
     end
+    binding.pry
   end
   
   def play

@@ -75,7 +75,7 @@ class TicTacToe
     if valid_move?(position)
       move(position, current_player)
       display_board
-      return "1"
+      return 1
     else turn
     end
   end

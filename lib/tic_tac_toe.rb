@@ -92,12 +92,11 @@ class TicTacToe
   
   def full?
     @board.all? do |token|
-      
-    
+      token == 'X' || token == 'O'
   end
   
   def draw?
-    
+    !won? && full?
   end
   
   def over?

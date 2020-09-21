@@ -72,7 +72,7 @@ class TicTacToe
   end
   
   def turn
-    user_input = gets.chomp
+    user_input = gets.strip
     
     position = input_to_index(user_input)
     if valid_move?(position)

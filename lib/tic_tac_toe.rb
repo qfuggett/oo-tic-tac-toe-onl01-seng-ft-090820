@@ -75,9 +75,7 @@ class TicTacToe
     if valid_move?(position)
       move(position, current_player)
       display_board
-    elsif
-      !valid_move?(position) 
-         move(position, current_player)
+    else turn
 
     end
   end

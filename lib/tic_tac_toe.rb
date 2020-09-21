@@ -81,8 +81,28 @@ class TicTacToe
       display_board
     else turn
     end
-     
   end
+  
+  def won
+    
+  end
+  
+  def full?
+    
+  end
+  
+  def draw?
+    
+  end
+  
+  def over?
+    
+  end
+  
+  def winner?
+    
+  end
+  
   
   def play
     

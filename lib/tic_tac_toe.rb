@@ -28,7 +28,7 @@ class TicTacToe
   end
   
   def input_to_index(string)
-    @input = string.to_i - 1          #converts string to an index(integer)
+    string.to_i - 1          #converts string to an index(integer)
     #@input - 1
   end
   

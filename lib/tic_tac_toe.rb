@@ -80,7 +80,7 @@ class TicTacToe
       display_board
     else turn
     end
-    binding.pry
+     
   end
   
   def play

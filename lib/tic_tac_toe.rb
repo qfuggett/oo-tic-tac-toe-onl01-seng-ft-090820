@@ -1,7 +1,7 @@
 require 'pry'
 
 class TicTacToe
-  attr_accessor :board, :input
+  attr_accessor :board, :input, :index
   
   WIN_COMBINATIONS = [
     [0,1,2],
@@ -32,20 +32,21 @@ class TicTacToe
     #@input - 1
   end
   
-  def move(input_to_index, player)              #player is the token
-    @board[input_to_index] = player            #accessing the array, input_to_index points to board position
+  def move(index, player)              #player is the token
+    @board[index] = player            #accessing the array, input_to_index points to board position
   end
   
-  def position_taken?(input_to_index)
-    if @board[input_to_index] == 'X' || @board[input_to_index] == 'O'
+  def position_taken?(index)
+    if @board[index] == 'X' || @board[index] == 'O'
     #   true
     # else false
      end
   end
   
-  def valid_move?(input_to_index)               #remember ! returns booleans
-    !position_taken?(input_to_index)  && @board[input_to_index]        
+  def valid_move?(index)               #remember ! returns booleans
+    #!position_taken?(input_to_index)  && @board[input_to_index]        
     #returns true/false based on return value of position_taken
+    index.between(0,8) && !position_taken?(index)
   end
   
   def turn_count

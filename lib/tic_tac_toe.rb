@@ -46,7 +46,7 @@ class TicTacToe
   def valid_move?(index)               #remember ! returns booleans
     #!position_taken?(input_to_index)  && @board[input_to_index]        
     #returns true/false based on return value of position_taken
-    index.between(0,8) && !position_taken?(index)
+    index.between?(0,8) && !position_taken?(index)
   end
   
   def turn_count

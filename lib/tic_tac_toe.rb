@@ -70,7 +70,7 @@ class TicTacToe
   end
   
   def turn
-    user_input = gets.chomp!
+    user_input = gets.chomp
     binding.pry
     position = input_to_index(user_input)
     if valid_move?(position)
